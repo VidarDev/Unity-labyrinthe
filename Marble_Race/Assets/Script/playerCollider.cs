@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerCollider : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class playerCollider : MonoBehaviour
     {
         if(col.gameObject.tag.Equals("winObject"))
         {
-            Application.LoadLevel("WinScene");
+            SceneManager.LoadScene("winScene");
         }
     }
 
