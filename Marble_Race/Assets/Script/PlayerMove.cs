@@ -4,32 +4,31 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    private float vitesse = 8f;
+    public float speed = 2f;
+    private Rigidbody rigid;
 
-    private Vector3 deplacement = Vector3.zero;
-    
-    void FixedUpdate()
+    private void Start()
     {
-        if ( Input.GetKey(KeyCode.UpArrow))
-        {
-            deplacement = Vector3.forward;
+        rigid = gameObject.GetComponent<Rigidbody>();
+    }
+
+    private void Update()
+    { 
+        if(Input.GetAxis("Horizontal") > 0)
+        { 
+            rigid.AddForce(Vector3.forward * speed); 
         }
-        
-        if ( Input.GetKey(KeyCode.DownArrow))
+        else if (Input.GetAxis("Horizontal") < 0) 
         {
-            deplacement = Vector3.back;
+            rigid.AddForce(-Vector3.forward * speed);
+        } 
+        if (Input.GetAxis("Vertical") > 0)
+        {
+            rigid.AddForce(-Vector3.right * speed);
         }
-//         if ( Input.GetKey(KeyCode.LeftArrow))
-//         {
-//             deplacement = Vector3.zero;
-//             transform.Rotate(Vector3.up * -vitesse * 5 * Time.fixedDeltaTime);
-//         }
-//        if ( Input.GetKey(KeyCode.RightArrow))
-//        {
-//            deplacement = Vector3.zero;
-//            transform.Rotate(Vector3.up * vitesse * 5 * Time.fixedDeltaTime);
-//        }
-        transform.Translate(deplacement * vitesse * Time.fixedDeltaTime); 
-        deplacement = Vector3.zero;
+        else if (Input.GetAxis("Vertical") < 0) 
+        {
+            rigid.AddForce(Vector3.right * speed);
+        } 
     }
 }
