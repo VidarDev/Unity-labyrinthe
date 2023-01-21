@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 105
+  controlID: 22
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 111
+  controlID: 23
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 112
+  controlID: 24
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,36 +317,36 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Script
+    - Assets/AurynSky/Gems Ultimate Pack/Materials
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Script
+  - Assets/AurynSky/Gems Ultimate Pack/Materials
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Theo\Dropbox\PC\Documents\GitHub\Unity-labyrinthe\Marble_Race
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 46630000
-    m_LastClickedID: 25414
-    m_ExpandedIDs: 000000002e63000030630000326300003463000036630000386300003a630000d463000000ca9a3bffffff7f
+    m_SelectedIDs: 88460400
+    m_LastClickedID: 280200
+    m_ExpandedIDs: 0000000050630000526300005463000056630000586300005a6300005c6300005e630000706300007263000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Prefabs
+      m_OriginalName: Prefabs
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 280204
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_SearchString: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002e63000030630000326300003463000036630000386300003a630000
+    m_ExpandedIDs: 0000000050630000526300005463000056630000586300005a6300005c6300005e630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -404,7 +404,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 8}
+      m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -487,24 +487,24 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 4956}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 6637ffff36fbffff38fbffff545c00005a5c00007a5c0000865c0000ec5c0000085d0000785d0000265e0000f65e0000645f0000705f0000e05f0000a2610000d66100003c620000
+      m_ExpandedIDs: eab3feffd8fdfeff926cfffff06dffff36fbffff38fbffffea5a00008c5c00001a5d0000145f0000fe5f0000c6db0200e4040300
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: GameObject
-        m_OriginalName: GameObject
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -51354
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -772,9 +772,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -73.3512, y: 22.034939, z: 4.1190424}
+    m_Target: {x: -66.472755, y: 42.595596, z: -18.094826}
     speed: 2
-    m_Value: {x: -73.3512, y: 22.034939, z: 4.1190424}
+    m_Value: {x: -66.472755, y: 42.595596, z: -18.094826}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -821,13 +821,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.61220074, y: -0.009582639, z: 0.0073863, w: -0.79074675}
+    m_Target: {x: -0.7498899, y: -0.006015764, z: 0.006826572, w: -0.6616713}
     speed: 2
-    m_Value: {x: -0.61213446, y: -0.009581601, z: 0.0073855002, w: -0.79066116}
+    m_Value: {x: -0.749805, y: -0.006015083, z: 0.006825799, w: -0.66159636}
   m_Size:
-    m_Target: 40.95578
+    m_Target: 157.35916
     speed: 2
-    m_Value: 40.95578
+    m_Value: 157.35916
   m_Ortho:
     m_Target: 0
     speed: 2
