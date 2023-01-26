@@ -140,6 +140,14 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.AsyncOperation
 
+	//Start Registrations for type : UnityEngine.Audio.AudioMixer
+
+		//System.Boolean UnityEngine.Audio.AudioMixer::SetFloat(System.String,System.Single)
+		void Register_UnityEngine_Audio_AudioMixer_SetFloat();
+		Register_UnityEngine_Audio_AudioMixer_SetFloat();
+
+	//End Registrations for type : UnityEngine.Audio.AudioMixer
+
 	//Start Registrations for type : UnityEngine.Behaviour
 
 		//System.Boolean UnityEngine.Behaviour::get_enabled()
@@ -842,6 +850,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_GameObject_TryGetComponentInternal();
 		Register_UnityEngine_GameObject_TryGetComponentInternal();
 
+		//UnityEngine.GameObject UnityEngine.GameObject::Find(System.String)
+		void Register_UnityEngine_GameObject_Find();
+		Register_UnityEngine_GameObject_Find();
+
 		//UnityEngine.Transform UnityEngine.GameObject::get_transform()
 		void Register_UnityEngine_GameObject_get_transform();
 		Register_UnityEngine_GameObject_get_transform();
@@ -1294,6 +1306,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Input_GetMouseButtonUp();
 		Register_UnityEngine_Input_GetMouseButtonUp();
 
+		//System.Boolean UnityEngine.Input::get_anyKey()
+		void Register_UnityEngine_Input_get_anyKey();
+		Register_UnityEngine_Input_get_anyKey();
+
 		//System.Boolean UnityEngine.Input::get_mousePresent()
 		void Register_UnityEngine_Input_get_mousePresent();
 		Register_UnityEngine_Input_get_mousePresent();
@@ -1745,6 +1761,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Object::DestroyImmediate(UnityEngine.Object,System.Boolean)
 		void Register_UnityEngine_Object_DestroyImmediate();
 		Register_UnityEngine_Object_DestroyImmediate();
+
+		//System.Void UnityEngine.Object::DontDestroyOnLoad(UnityEngine.Object)
+		void Register_UnityEngine_Object_DontDestroyOnLoad();
+		Register_UnityEngine_Object_DontDestroyOnLoad();
 
 		//System.Void UnityEngine.Object::SetName(UnityEngine.Object,System.String)
 		void Register_UnityEngine_Object_SetName();

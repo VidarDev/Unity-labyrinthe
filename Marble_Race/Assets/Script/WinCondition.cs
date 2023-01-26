@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WinCondition : MonoBehaviour
 {
-    public GameObject winMenuUI;
+    public Timer timer;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,8 @@ public class WinCondition : MonoBehaviour
     {
         if(col.gameObject.tag.Equals("winObject"))
         {
-            winMenuUI.SetActive(true);
+            timer.timerIsRunning = false;
+            SceneManager.LoadScene("WinScene");
         }
     }
 

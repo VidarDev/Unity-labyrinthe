@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] GameObject player;
-    private float speed = 1.5f;
+    public GameObject timer;
+    public float speed = 5f;
     private float jumpspeed = 5;
     private bool isGrounded = false;
     private Rigidbody rigid;
@@ -19,6 +20,9 @@ public class PlayerMovement : MonoBehaviour
     // Appel à chaque frame
     private void Update()
     { 
+        if(Input.anyKey) {
+            timer.SetActive(true);
+        }
         if(Input.GetAxis("Horizontal") > 0)
         { 
             rigid.AddForce(Vector3.forward * speed); 
