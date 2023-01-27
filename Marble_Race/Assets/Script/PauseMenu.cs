@@ -49,4 +49,12 @@ public class PauseMenu : MonoBehaviour
         Debug.Log("Quitting game...");
         SceneManager.LoadScene(0);
     }
+
+    public void ResetTheGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1f;
+        GameIsPause = false;
+        print("The button is working");
+    }
 }

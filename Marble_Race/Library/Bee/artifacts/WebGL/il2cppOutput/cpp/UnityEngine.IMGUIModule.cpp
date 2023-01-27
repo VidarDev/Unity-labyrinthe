@@ -2699,6 +2699,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MethodInfo_t* Type_GetMethod_m9E66B5053F15053
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GUIUtility_Internal_GetControlID_Injected_m00F0DDAB73176CDD6EB5F19AA64511CF445E1249 (int32_t ___hint0, int32_t ___focusType1, Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* ___rect2, const RuntimeMethod* method) ;
 // System.Int32 UnityEngine.GUIUtility::Internal_GetControlID(System.Int32,UnityEngine.FocusType,UnityEngine.Rect)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GUIUtility_Internal_GetControlID_m9836A3FD9B0629A36F356FD8D4606092B2E2AD21 (int32_t ___hint0, int32_t ___focusType1, Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___rect2, const RuntimeMethod* method) ;
+// System.Void UnityEngine.GUIUtility::AlignRectToDevice_Injected(UnityEngine.Rect&,System.Int32&,System.Int32&,UnityEngine.Rect&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUIUtility_AlignRectToDevice_Injected_mED42E3383D2A790E76602A5AB894DDE4850E43F1 (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* ___rect0, int32_t* ___widthInPixels1, int32_t* ___heightInPixels2, Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* ___ret3, const RuntimeMethod* method) ;
 // System.Void UnityEngine.GUIUtility::set_compositionCursorPos_Injected(UnityEngine.Vector2&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUIUtility_set_compositionCursorPos_Injected_mF035733A0EF9A0258AB44982286A8FFFBF2B09A6 (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* ___value0, const RuntimeMethod* method) ;
 // System.Void System.Action::Invoke()
@@ -2764,6 +2766,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GUIUtility_IsExitGUIException_mB887DAF96
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GUIUtility_get_guiDepth_m011B188F7C41DAE079019E64BC064208E618F315 (const RuntimeMethod* method) ;
 // System.Void System.ArgumentException::.ctor(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465 (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* __this, String_t* ___message0, const RuntimeMethod* method) ;
+// UnityEngine.Rect UnityEngine.GUIUtility::AlignRectToDevice(UnityEngine.Rect,System.Int32&,System.Int32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D GUIUtility_AlignRectToDevice_mE651D8C8024AD7FF9C1773FA000A2626BC263B8C (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___rect0, int32_t* ___widthInPixels1, int32_t* ___heightInPixels2, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Rect::get_xMin()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Rect_get_xMin_mE89C40702926D016A633399E20DB9501E251630D (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Rect::get_xMax()
@@ -12955,6 +12959,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GUIUtility_OwnsId_m46FE01F2CEF3A94173A1D
 	bool icallRetVal = _il2cpp_icall_func(___id0);
 	return icallRetVal;
 }
+// UnityEngine.Rect UnityEngine.GUIUtility::AlignRectToDevice(UnityEngine.Rect,System.Int32&,System.Int32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D GUIUtility_AlignRectToDevice_mE651D8C8024AD7FF9C1773FA000A2626BC263B8C (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___rect0, int32_t* ___widthInPixels1, int32_t* ___heightInPixels2, const RuntimeMethod* method) 
+{
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		int32_t* L_0 = ___widthInPixels1;
+		int32_t* L_1 = ___heightInPixels2;
+		GUIUtility_AlignRectToDevice_Injected_mED42E3383D2A790E76602A5AB894DDE4850E43F1((&___rect0), L_0, L_1, (&V_0), NULL);
+		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_2 = V_0;
+		return L_2;
+	}
+}
 // System.String UnityEngine.GUIUtility::get_compositionString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* GUIUtility_get_compositionString_mE06412C5CE41311C00BFC4028716D5F03EDD85E9 (const RuntimeMethod* method) 
 {
@@ -13734,6 +13751,27 @@ IL_001c:
 		return L_4;
 	}
 }
+// UnityEngine.Rect UnityEngine.GUIUtility::AlignRectToDevice(UnityEngine.Rect)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D GUIUtility_AlignRectToDevice_mE788EB722671F5DC10F7ADB8CA1A3427749ECDD1 (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___rect0, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	{
+		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_0 = ___rect0;
+		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_1;
+		L_1 = GUIUtility_AlignRectToDevice_mE651D8C8024AD7FF9C1773FA000A2626BC263B8C(L_0, (&V_0), (&V_1), NULL);
+		V_2 = L_1;
+		goto IL_000e;
+	}
+
+IL_000e:
+	{
+		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_2 = V_2;
+		return L_2;
+	}
+}
 // System.Boolean UnityEngine.GUIUtility::HitTest(UnityEngine.Rect,UnityEngine.Vector2,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GUIUtility_HitTest_m55D2F9EAC7EA99CA0C490546A6B45DA96F5AB3DA (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___rect0, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___point1, int32_t ___offset2, const RuntimeMethod* method) 
 {
@@ -13830,6 +13868,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GUIUtility_Internal_GetControlID_Inje
 	_il2cpp_icall_func = (GUIUtility_Internal_GetControlID_Injected_m00F0DDAB73176CDD6EB5F19AA64511CF445E1249_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GUIUtility::Internal_GetControlID_Injected(System.Int32,UnityEngine.FocusType,UnityEngine.Rect&)");
 	int32_t icallRetVal = _il2cpp_icall_func(___hint0, ___focusType1, ___rect2);
 	return icallRetVal;
+}
+// System.Void UnityEngine.GUIUtility::AlignRectToDevice_Injected(UnityEngine.Rect&,System.Int32&,System.Int32&,UnityEngine.Rect&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUIUtility_AlignRectToDevice_Injected_mED42E3383D2A790E76602A5AB894DDE4850E43F1 (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* ___rect0, int32_t* ___widthInPixels1, int32_t* ___heightInPixels2, Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* ___ret3, const RuntimeMethod* method) 
+{
+	typedef void (*GUIUtility_AlignRectToDevice_Injected_mED42E3383D2A790E76602A5AB894DDE4850E43F1_ftn) (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D*, int32_t*, int32_t*, Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D*);
+	static GUIUtility_AlignRectToDevice_Injected_mED42E3383D2A790E76602A5AB894DDE4850E43F1_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GUIUtility_AlignRectToDevice_Injected_mED42E3383D2A790E76602A5AB894DDE4850E43F1_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GUIUtility::AlignRectToDevice_Injected(UnityEngine.Rect&,System.Int32&,System.Int32&,UnityEngine.Rect&)");
+	_il2cpp_icall_func(___rect0, ___widthInPixels1, ___heightInPixels2, ___ret3);
 }
 // System.Void UnityEngine.GUIUtility::set_compositionCursorPos_Injected(UnityEngine.Vector2&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUIUtility_set_compositionCursorPos_Injected_mF035733A0EF9A0258AB44982286A8FFFBF2B09A6 (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* ___value0, const RuntimeMethod* method) 

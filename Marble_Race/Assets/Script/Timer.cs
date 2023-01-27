@@ -13,8 +13,13 @@ public class Timer : MonoBehaviour
     private void Start()
     {
         // Starts the timer automatically
+        if( Time.timeScale == 0f){
+            timerIsRunning = false; 
+        }
+        else{
         timeText= GameObject.Find("TimerText").GetComponent<Text>();
         timerIsRunning = true;
+        }
     }
     // utilisation de l'instance de Timer pour éviter la perte des données lors du passage des scènes grâce à "DestroyOnLoad"
     void Awake(){
